@@ -50,6 +50,19 @@ router.get('/', verifyToken, async (req, res) => {
   }
 });
 
+// Obtener un usuario por ID
+router.get('/:id', verifyToken, async (req, res) => {
+  try {
+    const user = await User.findByPk(req.params.id);
+    if (!user) {
+      return res.status(404).send({ message: "Usuario no encontrado." });
+    }
+    res.json(user);
+  } catch (error) {
+    res.status(500).send({ message: "Error al obtener el usuario", error: error.message });
+  }
+});
+
 // Actualizar un usuario
 router.put('/:id', verifyToken, async (req, res) => {
   const { name, email, password } = req.body;
