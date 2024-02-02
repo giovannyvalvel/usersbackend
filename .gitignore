@@ -1,0 +1,42 @@
+# Dependencias
+/node_modules
+/npm-debug.log
+/yarn-error.log
+
+# Archivos de entorno
+.env
+.env.test
+
+# Logs
+*.log
+logs
+*.pid
+*.seed
+*.pid.lock
+
+# Directorios de construcción
+/dist
+/build
+
+# Sistema Operativo
+.DS_Store
+Thumbs.db
+
+# Directorios que pueden contener archivos sensibles o privados
+/config
+/secret-folder
+
+# Otros archivos y directorios
+*.sublime-workspace
+.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.tmproj
+*.esproj
+nbproject/
+*.targz
+*.zip
+*.swp
