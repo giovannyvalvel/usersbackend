@@ -3,10 +3,6 @@
 /npm-debug.log
 /yarn-error.log
 
-# Archivos de entorno
-.env
-.env.test
-
 # Logs
 *.log
 logs
